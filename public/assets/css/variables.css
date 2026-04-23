@@ -1,0 +1,52 @@
+/* =====================================================
+   SmartTrack — CSS Variables
+   ===================================================== */
+:root {
+  --sidebar-bg:     #1B2035;
+  --sidebar-hover:  rgba(255,255,255,0.07);
+  --sidebar-active: rgba(255,255,255,0.12);
+  --sidebar-text:   rgba(255,255,255,0.70);
+  --sidebar-w:      240px;
+  --topbar-h:       64px;
+
+  --bg-main:    #F4F7FA;
+  --bg-card:    #FFFFFF;
+  --bg-topbar:  #FFFFFF;
+
+  --accent:       #00C9A7;
+  --accent-hover: #00B896;
+  --accent-blue:  #3B82F6;
+  --accent-purple:#7C3AED;
+
+  --card-teal-from:   #00B4A6;
+  --card-teal-to:     #007B8A;
+  --card-navy-from:   #1B2B5E;
+  --card-navy-to:     #0F1A40;
+  --card-purple-from: #7C3AED;
+  --card-purple-to:   #5B21B6;
+
+  --status-progress-bg:  #D1FAF0; --status-progress-txt: #059669;
+  --status-hold-bg:      #FEF3C7; --status-hold-txt:     #D97706;
+  --status-done-bg:      #D1FAE5; --status-done-txt:     #065F46;
+  --status-review-bg:    #EDE9FE; --status-review-txt:   #6D28D9;
+  --status-todo-bg:      #F1F5F9; --status-todo-txt:     #475569;
+
+  --text-primary:   #1E293B;
+  --text-secondary: #64748B;
+  --text-muted:     #94A3B8;
+
+  --border:      #E8EDF2;
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md:   0 4px 16px rgba(0,0,0,0.08);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --transition: all 0.2s ease;
+
+  --font-head: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body { background: var(--bg-main); color: var(--text-primary); }

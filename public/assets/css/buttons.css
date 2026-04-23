@@ -1,0 +1,48 @@
+/* =====================================================
+   SmartTrack — Buttons & Badges
+   ===================================================== */
+.btn-primary{background:linear-gradient(135deg,var(--accent),#00A699);border:none;color:#fff;padding:9px 17px;border-radius:var(--radius-sm);font-family:var(--font-body);font-weight:600;font-size:13px;cursor:pointer;transition:var(--transition);display:inline-flex;align-items:center;gap:6px;text-decoration:none;white-space:nowrap;}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,201,167,0.35);color:#fff;}
+.btn-primary.btn-sm{padding:6px 12px;font-size:12px;}
+.btn-primary.blue{background:linear-gradient(135deg,var(--accent-blue),#2563EB);}
+.btn-primary.blue:hover{box-shadow:0 6px 18px rgba(59,130,246,0.35);}
+.btn-primary.red{background:linear-gradient(135deg,#EF4444,#DC2626);}
+.btn-primary.red:hover{box-shadow:0 6px 18px rgba(239,68,68,0.35);}
+
+.btn-ghost{background:var(--bg-card);border:1.5px solid var(--border);color:var(--text-secondary);padding:7px 14px;border-radius:var(--radius-sm);font-family:var(--font-body);font-weight:600;font-size:12.5px;cursor:pointer;transition:var(--transition);display:inline-flex;align-items:center;gap:6px;text-decoration:none;white-space:nowrap;}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+.btn-ghost.btn-sm{padding:5px 10px;font-size:12px;}
+
+.btn-danger{background:#FEF2F2;border:1.5px solid #FECACA;color:#DC2626;padding:7px 14px;border-radius:var(--radius-sm);font-weight:600;font-size:12.5px;cursor:pointer;transition:var(--transition);display:inline-flex;align-items:center;gap:6px;text-decoration:none;white-space:nowrap;}
+.btn-danger:hover{background:#FEE2E2;}
+
+/* Icon action buttons (edit/delete in tables) */
+.act-btn{width:28px;height:28px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--text-muted);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:13px;transition:var(--transition);text-decoration:none;}
+.act-btn.edit:hover{background:#EFF6FF;color:#3B82F6;border-color:#BFDBFE;}
+.act-btn.delete:hover{background:#FEF2F2;color:#EF4444;border-color:#FECACA;}
+.act-btn.view:hover{background:#F0FDF4;color:#059669;border-color:#86EFAC;}
+
+/* Status badges */
+.status-badge{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap;}
+.status-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.status-badge.in-progress{background:var(--status-progress-bg);color:var(--status-progress-txt);}
+.status-badge.in-progress .status-dot{background:var(--status-progress-txt);}
+.status-badge.on-hold{background:var(--status-hold-bg);color:var(--status-hold-txt);}
+.status-badge.on-hold .status-dot{background:var(--status-hold-txt);}
+.status-badge.completed{background:var(--status-done-bg);color:var(--status-done-txt);}
+.status-badge.completed .status-dot{background:var(--status-done-txt);}
+.status-badge.review{background:var(--status-review-bg);color:var(--status-review-txt);}
+.status-badge.review .status-dot{background:var(--status-review-txt);}
+.status-badge.todo{background:var(--status-todo-bg);color:var(--status-todo-txt);}
+.status-badge.todo .status-dot{background:var(--status-todo-txt);}
+.status-badge.not-started{background:#F1F5F9;color:#64748B;}
+.status-badge.pending{background:#FEF3C7;color:#D97706;}
+.status-badge.pending .status-dot{background:#D97706;}
+.status-badge.approved{background:#D1FAE5;color:#065F46;}
+.status-badge.rejected{background:#FEE2E2;color:#DC2626;}
+
+/* Priority tags */
+.priority-tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;}
+.priority-tag.high  {background:#FEE2E2;color:#DC2626;}
+.priority-tag.medium{background:#FEF3C7;color:#D97706;}
+.priority-tag.low   {background:#D1FAE5;color:#059669;}

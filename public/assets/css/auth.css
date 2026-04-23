@@ -1,0 +1,67 @@
+/* =====================================================
+   SmartTrack — Auth (Login) Page
+   ===================================================== */
+body.auth-page{display:flex;min-height:100vh;background:var(--bg-main);overflow:hidden;}
+
+/* Left brand panel */
+.auth-brand{width:400px;flex-shrink:0;background:#1B2035;display:flex;flex-direction:column;justify-content:center;padding:50px 44px;position:relative;overflow:hidden;}
+.auth-brand::before{content:'';position:absolute;width:350px;height:350px;background:radial-gradient(circle,rgba(0,201,167,0.12) 0%,transparent 70%);top:-80px;right:-80px;pointer-events:none;}
+.auth-brand::after{content:'';position:absolute;width:250px;height:250px;background:radial-gradient(circle,rgba(124,58,237,0.08) 0%,transparent 70%);bottom:-50px;left:-50px;pointer-events:none;}
+
+.auth-logo{display:flex;align-items:center;gap:11px;margin-bottom:40px;position:relative;z-index:1;}
+.auth-logo-mark{width:42px;height:42px;background:linear-gradient(135deg,var(--accent),#007B8A);border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,201,167,0.35);}
+.auth-logo-name{font-family:var(--font-head);font-size:20px;font-weight:800;color:#fff;}
+.auth-logo-tag{font-size:10px;color:var(--accent);font-weight:700;letter-spacing:1.2px;}
+
+.auth-tagline{font-family:var(--font-head);font-size:30px;font-weight:800;color:#fff;line-height:1.2;margin-bottom:14px;letter-spacing:-0.5px;position:relative;z-index:1;}
+.auth-tagline .hl{color:var(--accent);}
+.auth-desc{font-size:13.5px;color:rgba(255,255,255,0.50);line-height:1.7;margin-bottom:32px;position:relative;z-index:1;}
+
+.auth-feats{display:flex;flex-direction:column;gap:10px;position:relative;z-index:1;}
+.auth-feat{display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,0.60);}
+.auth-feat-icon{width:28px;height:28px;border-radius:7px;background:rgba(0,201,167,0.15);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;}
+
+/* Right form panel */
+.auth-form-panel{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 24px;overflow-y:auto;}
+.auth-form-box{width:100%;max-width:420px;}
+.auth-form-title{font-family:var(--font-head);font-size:26px;font-weight:800;color:var(--text-primary);margin-bottom:5px;}
+.auth-form-sub{font-size:13.5px;color:var(--text-secondary);margin-bottom:24px;}
+
+/* Tab switcher */
+.auth-tabs{display:flex;background:var(--bg-main);border:1.5px solid var(--border);border-radius:10px;padding:4px;margin-bottom:22px;}
+.auth-tab{flex:1;padding:9px;text-align:center;font-size:13px;font-weight:600;color:var(--text-secondary);cursor:pointer;border-radius:7px;transition:var(--transition);user-select:none;}
+.auth-tab.active{background:var(--accent);color:#fff;box-shadow:0 2px 10px rgba(0,201,167,0.30);}
+
+/* Role cards */
+.role-row{display:flex;gap:10px;margin-bottom:18px;}
+.role-option{flex:1;border:1.5px solid var(--border);border-radius:10px;padding:13px 10px;text-align:center;cursor:pointer;transition:var(--transition);background:var(--bg-card);}
+.role-option:hover{border-color:var(--accent);}
+.role-option.selected{border-color:var(--accent);background:rgba(0,201,167,0.05);}
+.role-option .r-icon{font-size:22px;display:block;margin-bottom:5px;}
+.role-option .r-name{font-size:13px;font-weight:600;color:var(--text-primary);}
+.role-option .r-desc{font-size:11px;color:var(--text-muted);margin-top:2px;}
+
+/* Input */
+.input-grp{margin-bottom:14px;}
+.input-label{display:block;font-size:12px;font-weight:600;color:var(--text-secondary);margin-bottom:6px;}
+.input-wrap{position:relative;}
+.input-wrap .ii{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:14px;pointer-events:none;transition:color 0.2s;}
+.input-wrap:focus-within .ii{color:var(--accent);}
+.auth-input{width:100%;border:1.5px solid var(--border);border-radius:9px;padding:11px 13px 11px 38px;font-family:var(--font-body);font-size:13.5px;color:var(--text-primary);background:var(--bg-main);outline:none;transition:var(--transition);}
+.auth-input::placeholder{color:var(--text-muted);}
+.auth-input:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px rgba(0,201,167,0.10);}
+.auth-input.is-invalid{border-color:#EF4444;}
+.pwd-btn{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--text-muted);cursor:pointer;font-size:14px;padding:0;transition:color 0.2s;}
+.pwd-btn:hover{color:var(--accent);}
+
+/* Submit */
+.btn-auth{width:100%;padding:13px;background:linear-gradient(135deg,var(--accent),#00A699);border:none;border-radius:10px;color:#fff;font-family:var(--font-head);font-size:15px;font-weight:700;cursor:pointer;transition:var(--transition);display:flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;}
+.btn-auth:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,201,167,0.40);}
+
+/* Error alert */
+.auth-error{background:#FEF2F2;border:1.5px solid #FECACA;border-radius:9px;padding:10px 13px;font-size:13px;color:#DC2626;display:none;align-items:center;gap:8px;margin-bottom:14px;}
+.auth-footer{text-align:center;font-size:12px;color:var(--text-muted);margin-top:24px;}
+.default-creds{background:#F0FDF4;border:1.5px solid #86EFAC;border-radius:9px;padding:10px 14px;font-size:12px;color:#166534;margin-bottom:18px;}
+.default-creds strong{font-weight:700;}
+
+@media(max-width:860px){.auth-brand{display:none;}.auth-form-panel{padding:32px 20px;}}

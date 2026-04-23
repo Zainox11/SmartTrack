@@ -1,0 +1,28 @@
+/* =====================================================
+   SmartTrack — Modals & Forms
+   ===================================================== */
+.modal-content{background:var(--bg-card) !important;border:1px solid var(--border) !important;border-radius:16px !important;box-shadow:0 24px 80px rgba(0,0,0,0.12) !important;}
+.modal-header{border-bottom:1px solid var(--border) !important;padding:18px 22px !important;}
+.modal-title{font-family:var(--font-head);font-size:17px;font-weight:700;color:var(--text-primary);display:flex;align-items:center;gap:9px;}
+.mt-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+.mt-icon.teal  {background:rgba(0,201,167,0.12);color:var(--accent);}
+.mt-icon.blue  {background:rgba(59,130,246,0.12);color:var(--accent-blue);}
+.mt-icon.red   {background:rgba(239,68,68,0.12); color:#EF4444;}
+.modal-body  {padding:20px 22px !important;}
+.modal-footer{border-top:1px solid var(--border) !important;padding:14px 22px !important;gap:8px !important;}
+
+/* Form controls */
+.form-label-st{font-size:11.5px;font-weight:600;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:6px;}
+.form-control-st{width:100%;background:#F8FAFC;border:1.5px solid var(--border);border-radius:8px;padding:10px 13px;color:var(--text-primary);font-family:var(--font-body);font-size:13.5px;outline:none;transition:var(--transition);}
+.form-control-st::placeholder{color:var(--text-muted);}
+.form-control-st:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px rgba(0,201,167,0.10);}
+select.form-control-st{cursor:pointer;}
+textarea.form-control-st{resize:vertical;min-height:80px;}
+.form-group{margin-bottom:14px;}
+.form-group:last-child{margin-bottom:0;}
+.form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+@media(max-width:480px){.form-grid-2{grid-template-columns:1fr;}}
+
+/* Form validation feedback */
+.field-error{font-size:11.5px;color:#DC2626;margin-top:4px;display:block;}
+.form-control-st.is-invalid{border-color:#EF4444;}
