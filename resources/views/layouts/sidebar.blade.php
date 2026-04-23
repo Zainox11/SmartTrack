@@ -65,8 +65,8 @@
          class="nav-link {{ request()->routeIs('client.tasks') ? 'active' : '' }}">
         <i class="bi bi-list-task nav-icon"></i> My Tasks
       </a>
-      <a href="{{ route('client.request') }}"
-         class="nav-link {{ request()->routeIs('client.request') ? 'active' : '' }}">
+     <a href="{{ route('client.request.create') }}"
+   class="nav-link {{ request()->routeIs('client.request*') ? 'active' : '' }}">
         <i class="bi bi-send nav-icon"></i> New Request
       </a>
       <div class="nav-group-label">Account</div>
