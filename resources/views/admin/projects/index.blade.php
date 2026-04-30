@@ -2,13 +2,7 @@
 @section('title','Projects')
 
 @section('content')
-@include('layouts.sidebar',['active'=>'projects'])
 
-<div class="main-content">
-@include('layouts.topbar',['title'=>'Projects'])
-
-<div class="page-content">
-@include('layouts.flash')
 
 {{-- Mini Stats --}}
 <div class="row g-3 mb-3 fade-up">
@@ -68,6 +62,5 @@
   <div class="table-footer"><span class="tf-info">{{ $projects->count() }} project(s)</span></div>
   @endif
 </div>
-</div>{{-- /page-content --}}
-</div>{{-- /main-content --}}
+
 @endsection

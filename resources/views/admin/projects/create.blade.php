@@ -2,11 +2,6 @@
 @section('title','New Project')
 
 @section('content')
-@include('layouts.sidebar',['active'=>'projects'])
-<div class="main-content">
-@include('layouts.topbar',['title'=>'New Project'])
-<div class="page-content">
-
 <div class="row justify-content-center fade-up">
   <div class="col-lg-8">
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;">
